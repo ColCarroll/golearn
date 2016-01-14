@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	x, y, alpha := linear.GenerateLinearData(0.5, 5, 100000)
+	x, y, alpha := linear.GenerateLinearData(0.1, 5, 1000)
 	model := linear.LinearModel{}
 	fmt.Printf("A =\n%v\ny=\n%v\n", x, y)
 	model.Fit(x, y)
